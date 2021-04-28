@@ -1,0 +1,46 @@
+.Header {
+    padding: 50px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.HeaderGroup {
+    display: grid;
+    grid-template: 1fr / repeat(5, auto);
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 800px;
+    align-items: center;
+    justify-items: center;
+}
+
+.Header a {
+    font-weight: 700;
+    color: white;
+}
+
+.Header button {
+    padding: 8px 20px;
+    cursor: pointer;
+    outline: none;
+    background: #56ccf2;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+    .Header {
+        padding: 15px 0;
+    }
+
+    .HeaderGroup {
+        grid-template: 1fr / repeat(4, auto);
+    }
+
+    .Header a:nth-child(4) {
+        display: none;
+    }
+}
